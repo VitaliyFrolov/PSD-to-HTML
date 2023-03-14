@@ -1,0 +1,21 @@
+.featured-works {
+  margin-top: 25px;
+  margin-bottom: 83px;
+  &__title {
+    margin: 0;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    color: rgba(33, 36, 61, 1);
+
+    @media (max-width: 1020px) {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 60px;
+      color: rgba(33, 36, 61, 1);
+
+      text-align: center;
+    }
+  }
+}
