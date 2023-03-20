@@ -8,7 +8,7 @@
     padding-right: 60px;
     padding-left: 60px;
 
-    @media (max-width: 412px) {
+    @media (max-width: 540px) {
       padding-right: 18px;
       padding-left: 18px;
     }
@@ -31,7 +31,7 @@
   font-weight: 500;
   line-height: 29.38px;
 
-  @media (max-width: 412px) {
+  @media (max-width: 540px) {
     display: none;
   }
  }
@@ -48,7 +48,7 @@
   border: none;
   margin: 0;
 
-  @media (max-width: 412px) {
+  @media (max-width: 540px) {
     display: flex;
   }
  }
