@@ -38,6 +38,10 @@
 
  &__link {
   color: black;
+
+  &:hover {
+    color: rgba(255, 100, 100, 1);
+  }
  }
 
  &__menu {
