@@ -56,9 +56,48 @@ window.addEventListener('DOMContentLoaded', () => {
           });
         };
 
+        function removeDarkTheme() {
+          page.classList.remove('dark-page-js');
+          userNavLink.forEach((element) => {
+            element.classList.remove('dark-text-js');
+          });
+          mainInfoTitle.classList.remove('dark-text-js');
+          mainInfoText.classList.remove('dark-text-js');
+          postsBackground.classList.remove('dark-section-js');
+          postsTitle.classList.remove('dark-text-js');
+          postsItemBackground.forEach((element) => {
+            element.classList.remove('dark-page-js')
+          });
+          postsItemTitle.forEach((element) => {
+            element.classList.remove('dark-text-js')
+          });
+          postsItemText.forEach((element) => {
+            element.classList.remove('dark-text-js')
+          });
+          postsItemLine.forEach((element) => {
+            element.classList.remove('dark-line-js')
+          });
+          postsText.forEach((element) => {
+            element.classList.remove('dark-text-js')
+          });
+          featuredWorksTitle.classList.remove('dark-text-js');
+          featuredWorksItemTitle.forEach((element) => {
+            element.classList.remove('dark-text-js')
+          });
+          featuredWorksItemText.forEach((element) => {
+            element.classList.remove('dark-text-js')
+          });
+          footer.classList.remove('dark-text-js');
+          footerIcn.forEach((element) => {
+            element.classList.remove('dark-icn-js')
+          });
+        };
+
   function darkTheme() {
-    if (systemHours >= '18') {
+    if (systemHours <= '5' || systemHours == '21' || systemHours == '22' || systemHours == '23' || systemHours == '0') {
       addDarkTheme();
+    } else {
+      removeDarkTheme();
     }
   };
 
