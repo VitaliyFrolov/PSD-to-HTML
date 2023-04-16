@@ -1,0 +1,82 @@
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 30%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    position: relative;
+    background-color: white;
+    max-width: 500px;
+    padding: 45px;
+    border-radius: 5px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  &__form {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+  &__input {
+    border: none;
+    background-color: inherit;
+  }
+
+  &__button {
+    border: none;
+    background-color: inherit;
+
+    &:hover {
+      color: rgba(255, 100, 100, 1);
+    }
+
+    &-close {
+      position: absolute;
+      right: -23px;
+      top: -23px;
+      background: none;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+      border: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-icon {
+      &:hover {
+        fill: rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        fill: rgba(255, 100, 100, 1);
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
