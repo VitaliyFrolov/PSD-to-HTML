@@ -17,7 +17,12 @@ window.addEventListener('DOMContentLoaded', () => {
         featuredWorksItemTitle = document.querySelectorAll('.featured-works__item-title'),
         featuredWorksItemText = document.querySelectorAll('.featured-works__item-text'),
         footerIcn = document.querySelectorAll('.footer__icn-item')
-        footer = document.querySelector('.footer__text');
+        footer = document.querySelector('.footer__text'),
+        popup = document.querySelector('.popup__container'),
+        popupTitle = document.querySelector('.popup__title'),
+        popupText = document.querySelector('.popup__text'),
+        popupInput = document.querySelector('.popup__form'),
+        popupClose = document.querySelector('.popup__button-icon');
 
         function addDarkTheme() {
           page.classList.add('dark-page-js');
@@ -54,6 +59,11 @@ window.addEventListener('DOMContentLoaded', () => {
           footerIcn.forEach((element) => {
             element.classList.add('dark-icn-js')
           });
+          popup.classList.add('dark-page-js');
+          popupTitle.classList.add('dark-text-js');
+          popupText.classList.add('dark-text-js');
+          popupInput.classList.add('dark-input-js');
+          popupClose.classList.add('darl-icn-js');
         };
 
         function removeDarkTheme() {
@@ -91,6 +101,11 @@ window.addEventListener('DOMContentLoaded', () => {
           footerIcn.forEach((element) => {
             element.classList.remove('dark-icn-js')
           });
+          popup.classList.remove('dark-page-js');
+          popupTitle.classList.remove('dark-text-js');
+          popupText.classList.remove('dark-text-js'),
+          popupInput.classList.remove('dark-input-js');
+          popupClose.classList.remove('darl-icn-js');
         };
 
   function darkTheme() {
